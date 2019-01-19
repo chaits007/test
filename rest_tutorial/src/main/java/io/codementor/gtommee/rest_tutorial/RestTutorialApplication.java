@@ -2,7 +2,25 @@ package io.codementor.gtommee.rest_tutorial;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
+@SpringBootApplication
+public class RestTutorialApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+        return application.sources(RestTutorialApplication.class);
+    }
+
+    public static void main(String[] args) throws Exception {
+        SpringApplication.run(RestTutorialApplication.class, args);
+    }
+
+}
+
+
+/*
 @SpringBootApplication
 public class RestTutorialApplication {
 
@@ -12,3 +30,4 @@ public class RestTutorialApplication {
 
 }
 
+*/
