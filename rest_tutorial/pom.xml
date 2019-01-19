@@ -8,6 +8,7 @@
 		<version>2.1.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>io.codementor.gtommee</groupId>
 	<artifactId>rest_tutorial</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -33,6 +34,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-war-plugin -->
+		<dependency>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-war-plugin</artifactId>
+		    <version>3.2.2</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
